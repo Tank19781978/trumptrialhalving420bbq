@@ -1,0 +1,82 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shareight</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            
+            cursor: url('flamemsall.png') 16 16, auto;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="bg-cover bg-no-repeat bg-top bg-center" style="background-image: url('first.png')">
+
+
+        <div class="container mx-auto px-4 h-screen flex flex-col justify-between">
+            <header class="flex justify-between items-center py-6">
+                <h1 class="text-white text-3xl font-bold"></h1>
+                <nav>
+                    <ul class="flex space-x-8">
+                        <li><a href="#" class="text-white text-lg hover:text-gray-300">Twitter</a></li>
+                        <li><a href="#" class="text-white text-lg hover:text-gray-300">Telegram</a></li>
+                        <li><a href="#"
+                                class="text-white text-lg bg-white bg-opacity-20 hover:bg-opacity-40 py-2 px-4 rounded-full">CA</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <main class="flex flex-col items-center text-center text-white">
+                <h2 class="text-4xl font-bold">trumptrialhalving420bbq</h2>
+                <p class="text-2xl mt-4">Let me cook</p>
+                <a href="#"
+                    class="mt-8 inline-block bg-white bg-opacity-20 hover:bg-opacity-40 text-white py-2 px-6 rounded-full">
+                    <audio id="myAudio" autoplay>
+                        <source src="burn_burn.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                
+                    <!-- Custom play/pause button -->
+                    <div id="playButton">Cook</div>
+                
+                    <script>
+                        var myAudio = document.getElementById('myAudio');
+                        var playButton = document.getElementById('playButton');
+                
+                        // Event listener for the play/pause button
+                        playButton.addEventListener('click', function() {
+                            if (myAudio.paused) {
+                                myAudio.play();
+                            } else {
+                                myAudio.pause();
+                            }
+                        });
+                
+                        // Optional: Change the button text (or icon) based on play state
+                        myAudio.onplay = function() {
+                            playButton.textContent = 'Pause';
+                        };
+                        myAudio.onpause = function() {
+                            playButton.textContent = 'Play';
+                        };
+                    </script>
+                                </a>
+            </main>
+
+            <footer class="text-center">
+                <p class="text-white text-opacity-50 text-sm">© 2024 trumptrialhalving420bbq. All rights reserved.</p>
+            </footer>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
